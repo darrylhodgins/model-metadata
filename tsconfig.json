@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"module": "commonjs",
+		"module": "es2015",
 		"moduleResolution": "node",
 		"sourceMap": true,
 		"emitDecoratorMetadata": true,
@@ -11,7 +11,7 @@
 		"noUnusedLocals": false,
 		"forceConsistentCasingInFileNames": true,
 		"removeComments": true,
-		"baseUrl": "./src",
+		"baseUrl": "./",
 		"outDir": "./dist",
 		"declaration": true,
 		"types": [
