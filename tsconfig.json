@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"noUnusedParameters": false,
+		"noUnusedLocals": false,
+		"forceConsistentCasingInFileNames": true,
+		"removeComments": true,
+		"baseUrl": "./src",
+		"outDir": "./dist",
+		"declaration": true,
+		"types": [
+			"jasmine"
+		]
+	},
+	"include": [
+		"./src/**/*"
+	]
+}
