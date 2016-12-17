@@ -1,9 +1,9 @@
 {
   "name": "model-metadata",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Decorators to annotate data model classes",
-  "main": "./dist/model-metadata.js",
-  "typings": "./dist/model-metadata.d.ts",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
   "scripts": {
     "test": "karma start",
     "build": "rm -rf ./dist && tsc -p ./",

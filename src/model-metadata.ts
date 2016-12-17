@@ -11,14 +11,14 @@ export function Inspect(target: any): TableMetadataInterface {
 	};
 }
 
-export function Table(config: TableConfigInterface): ClassDecorator {
+export function Table(config?: TableConfigInterface): ClassDecorator {
 	return (target: Function) => {
 		Reflect.defineMetadata('TableConfig', config, target);
 	};
 }
 
-export function Field(config: FieldConfigInterface) {
-	return (target: any, propertyKey: string) => {
+export function Field(config?: FieldConfigInterface): PropertyDecorator {
+	return (target: Function, propertyKey: string) => {
 		let existingConfig: any = [];
 		if (Reflect.hasMetadata('FieldConfig', target.constructor)) {
 			existingConfig = Reflect.getMetadata('FieldConfig', target.constructor);
