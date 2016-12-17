@@ -5,7 +5,7 @@ module.exports = function(config) {
 		plugins: [
 			'karma-jasmine',
 			'karma-typescript',
-			'karma-chrome-launcher',
+			'karma-firefox-launcher',
 			'karma-spec-reporter'
 		],
 		files: [
@@ -25,7 +25,7 @@ module.exports = function(config) {
 		colors: true,
 		logLevel: config.LOG_INFO,
 		autoWatch: false,
-		browsers: ['Chrome'],
+		browsers: ['Firefox'],
 		captureTimeout: 300000,
 		browserDisconnectTimeout: 10000,
 		singleRun: true,
