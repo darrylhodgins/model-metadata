@@ -6,6 +6,10 @@ export interface TableConfigInterface {
 
 export interface FieldConfigInterface {
 	columnName?: string; // if different from property name
+	maxLength?: number;
+	type: string; // type: 'string' | 'int' | 'float' | 'decimal' | 'json' | 'date' | 'point';
+	required?: boolean;
+
 }
 
 export interface FieldMetadataInterface {

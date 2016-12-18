@@ -9,11 +9,13 @@ const TABLE_DECORATIONS = {
 };
 
 const FIELD_1_DECORATIONS = {
-	columnName: 'decorated_field_one'
+	columnName: 'decorated_field_one',
+	type: 'string'
 };
 
 const FIELD_2_DECORATIONS = {
-	columnName: 'decorated_field_two'
+	columnName: 'decorated_field_two',
+	type: 'int'
 };
 
 @Table(TABLE_DECORATIONS)
